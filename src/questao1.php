@@ -56,7 +56,7 @@ if ($ehMamifero) {
             }
         }
     }
-} else {
+} elseif ($ehMamifero === false) {
     $resposta = (string) readline("É ave? (sim/nao): ");
     $ehAve = (bool) ($resposta === "sim");
 
